@@ -7,7 +7,7 @@ import { FadeIn } from "@/components/motion/fade-in";
 export const metadata: Metadata = { title: "Medlemsavtal" };
 
 const sections = [
-  { title: "Frivilligt medlemskap", body: "Medlemskap i SAMEN är helt frivilligt. Du väljer själv om och när du vill gå med." },
+  { title: "Frivilligt medlemskap", body: "Medlemskap i Masjid Hayat är helt frivilligt. Du väljer själv om och när du vill gå med." },
   { title: "Avgifter", body: "Individuellt medlemskap: 100 SEK/månad. Familjemedlemskap: 150 SEK/månad (gäller personer i samma hushåll)." },
   { title: "Ingen bindningstid", body: "Det finns ingen bindningstid. Du kan avsluta ditt medlemskap när som helst." },
   { title: "GDPR", body: "Vi behandlar dina personuppgifter i enlighet med GDPR och gällande svensk lagstiftning. Se vår integritetspolicy." },
@@ -18,7 +18,7 @@ const sections = [
 export default function MembershipAgreementPage() {
   return (
     <>
-      <PageHero eyebrow="Juridiskt" title="Medlemsavtal" description="Villkor för medlemskap i SAMEN." />
+      <PageHero eyebrow="Juridiskt" title="Medlemsavtal" description="Villkor för medlemskap i Masjid Hayat." />
       <Section>
         <div className="mx-auto max-w-3xl space-y-6">
           {sections.map((s, i) => (

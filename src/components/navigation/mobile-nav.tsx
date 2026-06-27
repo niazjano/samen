@@ -7,15 +7,8 @@ import { useState } from "react";
 import { NavLink } from "@/components/navigation/nav-link";
 import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-import { mainNav, secondaryNav } from "@/lib/navigation";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { mainNav } from "@/lib/navigation";
 import { siteConfig } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
 
@@ -48,21 +41,9 @@ export function MobileNav({ className }: { className?: string }) {
                 {item.title}
               </NavLink>
             ))}
-            <Separator className="my-3" />
-            {secondaryNav.map((item) => (
-              <NavLink
-                key={item.href}
-                href={item.href}
-                className="rounded-xl px-3 py-3 text-base"
-                onClick={() => setOpen(false)}
-              >
-                {item.title}
-              </NavLink>
-            ))}
-            <Separator className="my-3" />
             <Button
-              render={<Link href="/become-member" />}
-              className="w-full rounded-xl bg-forest"
+              render={<Link href="/member" />}
+              className="mt-4 w-full rounded-xl bg-forest"
               nativeButton={false}
               onClick={() => setOpen(false)}
             >

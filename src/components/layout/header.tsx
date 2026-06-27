@@ -24,10 +24,10 @@ export function Header() {
         scrolled ? "glass border-b border-border/50 shadow-soft" : "bg-transparent"
       )}
     >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="group flex items-center gap-2.5 font-semibold tracking-tight">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-4 sm:px-6 lg:px-8">
+        <Link href="/" className="group flex min-w-0 shrink items-center gap-2.5 font-semibold tracking-tight">
           <span className="flex size-9 items-center justify-center rounded-xl bg-forest text-sm font-bold text-primary-foreground shadow-soft transition-transform group-hover:scale-105">
-            S
+            MH
           </span>
           <span className="hidden text-lg sm:inline">{siteConfig.name}</span>
         </Link>
@@ -35,7 +35,7 @@ export function Header() {
         <div className="flex items-center gap-1">
           <ThemeToggle className="hidden md:inline-flex" />
           <Button
-            render={<Link href="/become-member" />}
+            render={<Link href="/member" />}
             size="sm"
             className="hidden rounded-full bg-forest px-4 hover:bg-forest-light md:inline-flex"
             nativeButton={false}

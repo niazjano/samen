@@ -106,9 +106,11 @@
   }
   html {
     @apply scroll-smooth font-sans antialiased;
+    overflow-x: hidden;
   }
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
   }
   h1, h2, h3, h4 {
     @apply font-heading tracking-tight text-balance;
@@ -128,10 +130,12 @@
     -webkit-backdrop-filter: blur(16px);
   }
   .text-gradient-gold {
+    display: inline;
     background: linear-gradient(135deg, var(--gold) 0%, oklch(0.82 0.08 75) 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
   }
   .sr-only {
     position: absolute;

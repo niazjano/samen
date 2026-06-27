@@ -28,8 +28,8 @@ export function PageHero({
       <div className="absolute inset-0" style={{ background: "var(--hero-overlay)" }} />
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-16 pt-32 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={false}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
           className="max-w-3xl"
         >

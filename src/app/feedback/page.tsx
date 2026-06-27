@@ -6,7 +6,7 @@ import { Section } from "@/components/sections/section";
 import { tallyForms } from "@/lib/tally-forms";
 
 export const metadata: Metadata = {
-  title: "Feedback",
+  title: "Lämna synpunkt",
 };
 
 export default function FeedbackPage() {
@@ -15,16 +15,16 @@ export default function FeedbackPage() {
       <PageHero
         eyebrow="Feedback"
         title="Vi lyssnar på dig"
-        description="Varje förslag, synpunkt och idé hjälper oss att bli bättre. Din röst formar SAMENs framtid."
+        description="Vi uppskattar alla idéer och förbättringsförslag. Alla synpunkter läses och behandlas."
       />
       <Section className="py-12">
         <p className="mx-auto max-w-2xl text-center leading-relaxed text-muted-foreground">
-          Vi tar all feedback på allvar. Efter att du skickat in ditt formulär går det till vårt team
-          som går igenom och återkopplar vid behov. Tack för att du hjälper oss växa.
+          Har du en idé som kan förbättra vår verksamhet inför eller under Muharram? Dela den med
+          oss — din röst hjälper Masjid Hayat att bli bättre.
         </p>
       </Section>
       <FormSection
-        title="Dela din feedback"
+        title="Lämna din synpunkt"
         formId={tallyForms.feedback.id}
         formTitle={tallyForms.feedback.title}
       />

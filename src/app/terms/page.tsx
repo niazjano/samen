@@ -14,7 +14,7 @@ export default function TermsPage() {
         <FadeIn>
           <div className="mx-auto max-w-3xl space-y-6 leading-relaxed text-muted-foreground">
             <p>Genom att använda denna webbplats godkänner du dessa villkor. Innehållet tillhandahålls i informationssyfte.</p>
-            <p>SAMEN ansvarar inte för skador som uppstår genom användning av webbplatsen. Externa länkar ansvarar sina respektive ägare för.</p>
+            <p>Masjid Hayat ansvarar inte för skador som uppstår genom användning av webbplatsen. Externa länkar ansvarar sina respektive ägare för.</p>
             <p>Vi förbehåller oss rätten att uppdatera dessa villkor. Fortsatt användning efter ändringar innebär acceptans.</p>
           </div>
         </FadeIn>

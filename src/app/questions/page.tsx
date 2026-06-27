@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 import { FormSection } from "@/components/forms/form-section";
-import { FaqSection } from "@/components/sections/faq-section";
 import { PageHero } from "@/components/sections/page-hero";
+import { Section } from "@/components/sections/section";
 import { tallyForms } from "@/lib/tally-forms";
 
 export const metadata: Metadata = {
@@ -13,14 +13,19 @@ export default function QuestionsPage() {
   return (
     <>
       <PageHero
-        eyebrow="Frågor & svar"
-        title="Har du en fråga?"
-        description="Här hittar du svar på vanliga frågor. Hittar du inte det du söker? Ställ din fråga via formuläret nedan."
+        eyebrow="Kontakt"
+        title="Ställ en fråga"
+        description="Om du har frågor är du varmt välkommen att kontakta oss."
       />
-      <FaqSection />
+      <Section className="py-12">
+        <p className="mx-auto max-w-2xl text-center leading-relaxed text-muted-foreground">
+          Har du frågor om medlemskap, Muharram eller verksamheten? Fyll i formuläret nedan så
+          återkommer vi till dig så snart vi kan.
+        </p>
+      </Section>
       <FormSection
-        title="Ställ din fråga"
-        description="Frågor om medlemskap, aktiviteter, volontärskap eller partnerskap? Vi svarar inom 2 arbetsdagar."
+        title="Kontakta oss"
+        description="Vi svarar så snart som möjligt."
         formId={tallyForms.questions.id}
         formTitle={tallyForms.questions.title}
       />

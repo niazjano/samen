@@ -8,9 +8,14 @@ import { ChevronDown } from "lucide-react";
 import { ActionLink } from "@/components/navigation/action-link";
 import { Button } from "@/components/ui/button";
 
+const fadeIn = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+};
+
 export function HeroSection() {
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
+    <section className="relative flex min-h-[100svh] items-center justify-center overflow-hidden">
       <Image
         src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1920&q=80"
         alt="Ungdomar tillsammans i gemenskap"
@@ -20,45 +25,42 @@ export function HeroSection() {
         sizes="100vw"
       />
       <div className="absolute inset-0" style={{ background: "var(--hero-overlay)" }} />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,oklch(0.72_0.1_85/0.12),transparent_60%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,oklch(0.72_0.1_85/0.12),transparent_60%)]" />
 
-      <div className="relative z-10 mx-auto max-w-5xl px-4 pt-24 text-center sm:px-6">
+      <div className="relative z-10 mx-auto w-full max-w-5xl px-4 pt-24 pb-20 text-center sm:px-6">
         <motion.p
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
+          {...fadeIn}
           transition={{ duration: 0.6 }}
           className="mb-6 text-sm font-semibold tracking-[0.2em] text-gold uppercase"
         >
-          För unga. För gemenskap. För framtiden.
-        </motion.p>
-        <motion.h1
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.1 }}
-          className="text-4xl font-semibold leading-[1.1] text-primary-foreground sm:text-5xl lg:text-7xl"
-        >
-          Tillsammans bygger vi en{" "}
-          <span className="text-gradient-gold">tryggare framtid.</span>
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-primary-foreground/85 sm:text-xl"
-        >
-          SAMEN arbetar för att förebygga kriminalitet, stärka gemenskapen och skapa möjligheter
-          för barn och ungdomar i Näsby och andra utsatta områden.
+          För Muharram. För gemenskapen. För Masjid Hayat.
         </motion.p>
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
+          {...fadeIn}
+          transition={{ duration: 0.7, delay: 0.1 }}
+        >
+          <h1 className="text-4xl font-semibold leading-[1.15] text-primary-foreground sm:text-5xl lg:text-7xl">
+            Tillsammans för en{" "}
+            <span className="text-gradient-gold">meningsfull Muharram.</span>
+          </h1>
+        </motion.div>
+        <motion.p
+          {...fadeIn}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/85 sm:mt-8 sm:text-xl"
+        >
+          Masjid Hayats digitala plattform — bli medlem, engagera dig, ställ frågor och stöd
+          verksamheten före och under Muharram.
+        </motion.p>
+        <motion.div
+          {...fadeIn}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
+          className="mt-8 flex flex-col items-center justify-center gap-4 sm:mt-10 sm:flex-row"
         >
           <Button
-            render={<Link href="/become-member" />}
+            render={<Link href="/member" />}
             size="lg"
-            className="h-12 rounded-full bg-gold px-8 text-base font-semibold text-forest hover:bg-gold-light"
+            className="h-12 w-full rounded-full bg-gold px-8 text-base font-semibold text-forest hover:bg-gold-light sm:w-auto"
             nativeButton={false}
           >
             Bli medlem
@@ -67,10 +69,10 @@ export function HeroSection() {
             render={<ActionLink href="/support#swish" />}
             variant="outline"
             size="lg"
-            className="h-12 rounded-full border-primary-foreground/30 bg-primary-foreground/10 px-8 text-base text-primary-foreground backdrop-blur-sm hover:bg-primary-foreground/20"
+            className="h-12 w-full rounded-full border-primary-foreground/30 bg-primary-foreground/10 px-8 text-base text-primary-foreground backdrop-blur-sm hover:bg-primary-foreground/20 sm:w-auto"
             nativeButton={false}
           >
-            Stöd oss
+            Stöd Masjid Hayat
           </Button>
         </motion.div>
       </div>

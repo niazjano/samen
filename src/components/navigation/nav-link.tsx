@@ -26,7 +26,7 @@ export function NavLink({
       href={href}
       onClick={onClick}
       className={cn(
-        "relative py-2 text-sm font-medium transition-colors",
+        "relative rounded-lg py-2 text-sm font-medium transition-colors outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
         isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground",
         className
       )}

@@ -2,17 +2,17 @@ import type { MetadataRoute } from "next";
 
 import { siteConfig } from "@/lib/site-config";
 
+export const dynamic = "force-static";
+
 const routes = [
   "",
-  "/about",
-  "/mission",
-  "/become-member",
+  "/member",
   "/volunteer",
   "/feedback",
   "/questions",
+  "/whatsapp",
   "/support",
-  "/transparency",
-  "/contact",
+  "/about",
   "/membership-agreement",
   "/privacy-policy",
   "/terms",
