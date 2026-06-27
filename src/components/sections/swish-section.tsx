@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { Copy, Smartphone } from "lucide-react";
 import { useCallback, useState } from "react";
 
@@ -8,6 +7,7 @@ import { FadeIn } from "@/components/motion/fade-in";
 import { Section, SectionHeader } from "@/components/sections/section";
 import { Button } from "@/components/ui/button";
 import { Toast } from "@/components/ui/toast";
+import { assetPath } from "@/lib/asset-path";
 import { siteConfig } from "@/lib/site-config";
 
 export function SwishSection() {
@@ -70,13 +70,15 @@ export function SwishSection() {
                 </div>
                 <div className="flex flex-col items-center justify-center rounded-3xl border border-primary-foreground/10 bg-primary-foreground/5 p-6 sm:p-10">
                   <div className="flex w-full max-w-[15rem] items-center justify-center rounded-2xl bg-white p-4 sm:max-w-[17rem]">
-                    <Image
-                      src="/swish-qr.png"
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={assetPath("/images/swish-qr.png")}
                       alt="Swish QR-kod för Masjid Hayat — 123 186 51 46"
-                      width={496}
-                      height={500}
+                      width={416}
+                      height={432}
                       className="h-auto w-full rounded-xl object-contain"
-                      sizes="(max-width: 768px) 240px, 272px"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <p className="mt-6 text-center text-sm font-medium text-primary-foreground/75">
