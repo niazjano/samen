@@ -39,9 +39,9 @@ export function HeroSection() {
           {...fadeIn}
           transition={{ duration: 0.7, delay: 0.1 }}
         >
-          <h1 className="text-4xl font-semibold leading-[1.15] text-primary-foreground sm:text-5xl lg:text-7xl">
-            Tillsammans för en{" "}
-            <span className="text-gradient-gold">meningsfull Muharram.</span>
+          <h1 className="text-pretty text-4xl font-semibold leading-[1.2] text-primary-foreground sm:text-5xl lg:text-7xl">
+            <span className="block">Tillsammans för en</span>
+            <span className="block text-gold">meningsfull Muharram.</span>
           </h1>
         </motion.div>
         <motion.p

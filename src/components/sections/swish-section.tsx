@@ -11,7 +11,7 @@ import { Toast } from "@/components/ui/toast";
 import { siteConfig } from "@/lib/site-config";
 
 export function SwishSection() {
-  const formatted = siteConfig.swishNumber.replace(/(\d{3})(\d{3})(\d{4})/, "$1 $2 $3");
+  const formatted = siteConfig.swishNumber.replace(/(\d{3})(\d{3})(\d{2})(\d{2})/, "$1 $2 $3 $4");
   const [toastOpen, setToastOpen] = useState(false);
 
   const copy = useCallback(async () => {
@@ -68,15 +68,15 @@ export function SwishSection() {
                     </Button>
                   </div>
                 </div>
-                <div className="flex flex-col items-center justify-center rounded-3xl border border-primary-foreground/10 bg-primary-foreground/5 p-8 sm:p-10">
-                  <div className="flex w-full max-w-[13rem] items-center justify-center rounded-2xl bg-white p-4 sm:max-w-[15rem]">
+                <div className="flex flex-col items-center justify-center rounded-3xl border border-primary-foreground/10 bg-primary-foreground/5 p-6 sm:p-10">
+                  <div className="flex w-full max-w-[15rem] items-center justify-center rounded-2xl bg-white p-4 sm:max-w-[17rem]">
                     <Image
                       src="/swish-qr.png"
-                      alt="Swish QR-kod för Masjid Hayat"
-                      width={512}
-                      height={512}
-                      className="h-auto w-full rounded-xl"
-                      sizes="(max-width: 768px) 208px, 240px"
+                      alt="Swish QR-kod för Masjid Hayat — 123 186 51 46"
+                      width={496}
+                      height={500}
+                      className="h-auto w-full rounded-xl object-contain"
+                      sizes="(max-width: 768px) 240px, 272px"
                     />
                   </div>
                   <p className="mt-6 text-center text-sm font-medium text-primary-foreground/75">
