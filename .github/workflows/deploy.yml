@@ -35,6 +35,12 @@ jobs:
         env:
           NEXT_TELEMETRY_DISABLED: 1
 
+      - name: Add CNAME for custom domain
+        run: cp CNAME out/CNAME
+
+      - name: Verify CNAME in output
+        run: test -f out/CNAME && grep -x "samen.se" out/CNAME
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

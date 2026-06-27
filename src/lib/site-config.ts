@@ -3,7 +3,7 @@ export const siteConfig = {
   tagline: "Tillsammans för Muharram",
   description:
     "Masjid Hayats digitala plattform — bli medlem, engagera dig, ställ frågor och stöd verksamheten före och under Muharram.",
-  url: "https://niazjano.github.io/samen",
+  url: "https://samen.se",
   locale: "sv",
   swishNumber: "1231865146",
   email: "info@masjidhayat.se",
