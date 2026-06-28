@@ -5,7 +5,7 @@ const dir = "/images/muharram";
 /** Central registry of Muharram imagery — only user-provided assets. */
 export const muharramImages = {
   /** Homepage hero — strongest, most impactful */
-  hero: `${dir}/IMG_8523.png`,
+  hero: `${dir}/IMG_8532.png`,
   /** About page hero — shrine & alam */
   aboutHero: `${dir}/IMG_8544.png`,
   /** About section — calligraphy & symbolic imagery */
