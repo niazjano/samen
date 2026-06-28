@@ -4,6 +4,7 @@ import { FileText, Landmark, Scale, Target, Users } from "lucide-react";
 import { FadeIn } from "@/components/motion/fade-in";
 import { PageHero } from "@/components/sections/page-hero";
 import { Section, SectionHeader } from "@/components/sections/section";
+import { muharramImages } from "@/lib/muharram-images";
 
 export const metadata: Metadata = {
   title: "Transparens",
@@ -25,7 +26,8 @@ export default function TransparencyPage() {
         eyebrow="Transparens"
         title="Öppenhet i allt vi gör"
         description="Transparens är en av våra kärnvärderingar. Här delar vi hur vi arbetar, beslutar och använder resurser."
-        image="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920&q=80"
+        image={muharramImages.transparency}
+        imageAlt="Muharram — Masjid Hayat"
       />
       <Section>
         <SectionHeader

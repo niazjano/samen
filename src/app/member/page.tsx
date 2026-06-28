@@ -6,6 +6,7 @@ import { FormSection } from "@/components/forms/form-section";
 import { FadeIn } from "@/components/motion/fade-in";
 import { PageHero } from "@/components/sections/page-hero";
 import { Section, SectionHeader } from "@/components/sections/section";
+import { muharramImages } from "@/lib/muharram-images";
 import { tallyForms } from "@/lib/tally-forms";
 
 export const metadata: Metadata = {
@@ -32,6 +33,9 @@ export default function MemberPage() {
         eyebrow="Medlemskap"
         title="Bli medlem"
         description="Som medlem hjälper du Masjid Hayat att skapa en professionell, välorganiserad och hållbar verksamhet."
+        image={muharramImages.member}
+        imageAlt="Helgedom upplyst om natten — Muharram"
+        objectPosition="center 30%"
       />
       <Section>
         <SectionHeader title="Medlemskap" description="Välj det alternativ som passar dig." />

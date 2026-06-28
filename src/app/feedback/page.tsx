@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { FormSection } from "@/components/forms/form-section";
 import { PageHero } from "@/components/sections/page-hero";
 import { Section } from "@/components/sections/section";
+import { muharramImages } from "@/lib/muharram-images";
 import { tallyForms } from "@/lib/tally-forms";
 
 export const metadata: Metadata = {
@@ -16,6 +17,8 @@ export default function FeedbackPage() {
         eyebrow="Feedback"
         title="Vi lyssnar på dig"
         description="Vi uppskattar alla idéer och förbättringsförslag. Alla synpunkter läses och behandlas."
+        image={muharramImages.feedback}
+        imageAlt="Muharram — Masjid Hayat"
       />
       <Section className="py-12">
         <p className="mx-auto max-w-2xl text-center leading-relaxed text-muted-foreground">

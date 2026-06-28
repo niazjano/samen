@@ -4,6 +4,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import { FadeIn } from "@/components/motion/fade-in";
 import { PageHero } from "@/components/sections/page-hero";
 import { Section, SectionHeader } from "@/components/sections/section";
+import { muharramImages } from "@/lib/muharram-images";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
@@ -23,6 +24,8 @@ export default function ContactPage() {
         eyebrow="Kontakt"
         title="Hör av dig till oss"
         description="Vi svarar gärna på frågor om medlemskap, volontärskap, partnerskap och allt annat."
+        image={muharramImages.contact}
+        imageAlt="Muharram — Masjid Hayat"
       />
       <Section>
         <div className="grid gap-6 sm:grid-cols-3">

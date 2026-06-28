@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+import { imageSrc, muharramImages } from "@/lib/muharram-images";
 import { cn } from "@/lib/utils";
 
 type PageHeroProps = {
@@ -10,6 +11,8 @@ type PageHeroProps = {
   description?: string;
   eyebrow?: string;
   image?: string;
+  imageAlt?: string;
+  objectPosition?: string;
   className?: string;
   children?: React.ReactNode;
 };
@@ -18,13 +21,23 @@ export function PageHero({
   title,
   description,
   eyebrow,
-  image = "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1920&q=80",
+  image = muharramImages.defaultHero,
+  imageAlt = "Muharram — Masjid Hayat",
+  objectPosition = "center center",
   className,
   children,
 }: PageHeroProps) {
   return (
     <section className={cn("relative flex min-h-[55vh] items-end overflow-hidden pt-16", className)}>
-      <Image src={image} alt="" fill priority className="object-cover" sizes="100vw" aria-hidden="true" />
+      <Image
+        src={imageSrc(image)}
+        alt={imageAlt}
+        fill
+        priority
+        className="object-cover"
+        style={{ objectPosition }}
+        sizes="100vw"
+      />
       <div className="absolute inset-0" style={{ background: "var(--hero-overlay)" }} />
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-16 pt-32 sm:px-6 lg:px-8">
         <motion.div

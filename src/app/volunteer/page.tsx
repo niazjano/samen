@@ -4,6 +4,7 @@ import { FormSection } from "@/components/forms/form-section";
 import { FadeIn } from "@/components/motion/fade-in";
 import { PageHero } from "@/components/sections/page-hero";
 import { Section } from "@/components/sections/section";
+import { muharramImages } from "@/lib/muharram-images";
 import { tallyForms } from "@/lib/tally-forms";
 
 export const metadata: Metadata = {
@@ -17,7 +18,9 @@ export default function VolunteerPage() {
         eyebrow="Engagemang"
         title="Vill du göra skillnad?"
         description="Alla är välkomna att ansöka om en roll. Det spelar ingen roll om du har tidigare erfarenhet eller inte."
-        image="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1920&q=80"
+        image={muharramImages.community}
+        imageAlt="Gemenskap och engagemang under Muharram"
+        objectPosition="center center"
       />
       <Section className="py-12">
         <FadeIn>

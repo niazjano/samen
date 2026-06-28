@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 import { FadeIn } from "@/components/motion/fade-in";
+import { GallerySection } from "@/components/sections/gallery-section";
 import { PageHero } from "@/components/sections/page-hero";
 import { Section, SectionHeader } from "@/components/sections/section";
+import { imageSrc, muharramImages } from "@/lib/muharram-images";
 
 export const metadata: Metadata = {
   title: "Om oss",
@@ -17,6 +19,9 @@ export default function AboutPage() {
         eyebrow="Om oss"
         title="Masjid Hayat"
         description="En gemenskap som samlas kring Muharram — organiserad, välkomnande och driven av engagemang."
+        image={muharramImages.aboutHero}
+        imageAlt="Helgedom med gyllene minaret — Muharram"
+        objectPosition="center 20%"
       />
       <Section>
         <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -36,10 +41,10 @@ export default function AboutPage() {
           <FadeIn delay={0.1}>
             <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-soft">
               <Image
-                src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=800&q=80"
-                alt="Gemenskap samlad"
+                src={imageSrc(muharramImages.aboutSection)}
+                alt="Gyllene kalligrafi — Muharram"
                 fill
-                className="object-cover"
+                className="object-cover object-center"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
@@ -75,6 +80,7 @@ export default function AboutPage() {
           ))}
         </div>
       </Section>
+      <GallerySection />
     </>
   );
 }

@@ -4,6 +4,7 @@ import { PageHero } from "@/components/sections/page-hero";
 import { SwishSection } from "@/components/sections/swish-section";
 import { Section } from "@/components/sections/section";
 import { FadeIn } from "@/components/motion/fade-in";
+import { muharramImages } from "@/lib/muharram-images";
 
 export const metadata: Metadata = {
   title: "Stöd Masjid Hayat",
@@ -16,7 +17,9 @@ export default function SupportPage() {
         eyebrow="Donation"
         title="Stöd Masjid Hayat"
         description="Ditt bidrag hjälper oss att arrangera en välorganiserad Majlis under Muharram."
-        image="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=1920&q=80"
+        image={muharramImages.support}
+        imageAlt="Karbala — Imam Hussain (AS)"
+        objectPosition="center center"
       />
       <Section>
         <FadeIn>

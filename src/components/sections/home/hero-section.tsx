@@ -7,6 +7,7 @@ import { ChevronDown } from "lucide-react";
 
 import { ActionLink } from "@/components/navigation/action-link";
 import { Button } from "@/components/ui/button";
+import { imageSrc, muharramImages } from "@/lib/muharram-images";
 
 const fadeIn = {
   initial: { opacity: 0 },
@@ -17,11 +18,12 @@ export function HeroSection() {
   return (
     <section className="relative flex min-h-[100svh] items-center justify-center overflow-hidden">
       <Image
-        src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1920&q=80"
-        alt="Ungdomar tillsammans i gemenskap"
+        src={imageSrc(muharramImages.hero)}
+        alt="Muharram — Ya Hussain, Masjid Hayat"
         fill
         priority
         className="object-cover"
+        style={{ objectPosition: "center 30%" }}
         sizes="100vw"
       />
       <div className="absolute inset-0" style={{ background: "var(--hero-overlay)" }} />
