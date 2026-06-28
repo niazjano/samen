@@ -19,11 +19,11 @@ export function HeroSection() {
     <section className="relative flex min-h-[100svh] items-center justify-center overflow-hidden">
       <Image
         src={imageSrc(muharramImages.hero)}
-        alt="Muharram — Imam Hussain (AS), Masjid Hayat"
+        alt="Muharram — Karbala, Masjid Hayat"
         fill
         priority
         className="object-cover"
-        style={{ objectPosition: "center 35%" }}
+        style={{ objectPosition: "center 40%" }}
         sizes="100vw"
       />
       <div className="absolute inset-0" style={{ background: "var(--hero-overlay)" }} />
