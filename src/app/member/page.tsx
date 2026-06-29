@@ -10,19 +10,19 @@ import { muharramImages } from "@/lib/muharram-images";
 import { tallyForms } from "@/lib/tally-forms";
 
 export const metadata: Metadata = {
-  title: "Bli medlem",
+  title: "Bli medlem i Masjid Hayat",
 };
 
 const tiers = [
   {
     name: "Enskild",
-    price: "100 kr/månad",
-    features: ["Stöd verksamheten året runt", "Ingen bindningstid", "Avsluta när som helst"],
+    price: "100 kr per månad",
+    features: ["Stöd verksamheten året runt"],
   },
   {
     name: "Familj",
-    price: "150 kr/månad",
-    features: ["Gäller personer i samma hushåll", "Ingen bindningstid", "Avsluta när som helst"],
+    price: "150 kr per månad",
+    features: ["Gäller personer i samma hushåll"],
   },
 ];
 
@@ -38,7 +38,10 @@ export default function MemberPage() {
         objectPosition="center 30%"
       />
       <Section>
-        <SectionHeader title="Medlemskap" description="Välj det alternativ som passar dig." />
+        <SectionHeader
+          title="Medlemskap"
+          description="Ingen bindningstid. Medlemskapet kan avslutas när som helst."
+        />
         <div className="grid gap-6 lg:grid-cols-2">
           {tiers.map((tier, i) => (
             <FadeIn key={tier.name} delay={i * 0.08}>
@@ -66,8 +69,7 @@ export default function MemberPage() {
         </p>
       </Section>
       <FormSection
-        title="Registrera ditt medlemskap"
-        description="Fyll i formuläret nedan för att bli medlem i Masjid Hayat."
+        title="Bli medlem i Masjid Hayat"
         formId={tallyForms.member.id}
         formTitle={tallyForms.member.title}
       />

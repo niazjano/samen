@@ -7,7 +7,7 @@ import { muharramImages } from "@/lib/muharram-images";
 import { tallyForms } from "@/lib/tally-forms";
 
 export const metadata: Metadata = {
-  title: "Lämna synpunkt",
+  title: "Lämna din synpunkt",
 };
 
 export default function FeedbackPage() {
@@ -22,8 +22,8 @@ export default function FeedbackPage() {
       />
       <Section className="py-12">
         <p className="mx-auto max-w-2xl text-center leading-relaxed text-muted-foreground">
-          Har du en idé som kan förbättra vår verksamhet inför eller under Muharram? Dela den med
-          oss — din röst hjälper Masjid Hayat att bli bättre.
+          Har du en idé, ett förbättringsförslag eller något du vill dela med oss? Vi uppskattar alla
+          synpunkter som hjälper oss att utveckla Masjid Hayat och skapa en ännu bättre verksamhet.
         </p>
       </Section>
       <FormSection

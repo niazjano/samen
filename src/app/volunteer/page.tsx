@@ -25,14 +25,14 @@ export default function VolunteerPage() {
       <Section className="py-12">
         <FadeIn>
           <p className="mx-auto max-w-2xl text-center leading-relaxed text-muted-foreground">
-            Hjälp till före, under eller efter Muharram. Vi behöver engagerade personer inom
-            organisation, teknik, välkomnande, kommunikation och mycket mer. Varje insats räknas.
+            Vill du hjälpa till före, under eller efter Muharram? Vi välkomnar alla som vill bidra med
+            sin tid, sina kunskaper eller sitt engagemang för att göra Majlis så välorganiserad och
+            framgångsrik som möjligt.
           </p>
         </FadeIn>
       </Section>
       <FormSection
-        title="Ansök om en roll"
-        description="Berätta om dig själv och hur du vill bidra. Vi hör av oss inom kort."
+        title="🤲 Anmäl dig för Khidmat i Imam Husayns (ع) väg"
         formId={tallyForms.volunteer.id}
         formTitle={tallyForms.volunteer.title}
       />

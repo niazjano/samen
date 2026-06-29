@@ -7,7 +7,7 @@ import { muharramImages } from "@/lib/muharram-images";
 import { tallyForms } from "@/lib/tally-forms";
 
 export const metadata: Metadata = {
-  title: "WhatsApp",
+  title: "Få tillgång till WhatsApp-gruppen",
 };
 
 export default function WhatsAppPage() {
@@ -22,13 +22,12 @@ export default function WhatsAppPage() {
       />
       <Section className="py-12">
         <p className="mx-auto max-w-2xl text-center leading-relaxed text-muted-foreground">
-          Ansök om tillgång genom formuläret nedan. I gruppen delas viktig information och
-          uppdateringar inför och under Muharram.
+          Ansök om tillgång till Masjid Hayats officiella WhatsApp-grupp för att ta del av viktig
+          information, uppdateringar och meddelanden inför och under Muharram.
         </p>
       </Section>
       <FormSection
-        title="Ansök om tillgång"
-        description="Fyll i formuläret så behandlar vi din ansökan så snart som möjligt."
+        title="Få tillgång till WhatsApp-gruppen"
         formId={tallyForms.whatsapp.id}
         formTitle={tallyForms.whatsapp.title}
       />

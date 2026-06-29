@@ -1,7 +1,7 @@
 export const tallyForms = {
-  member: { id: "9qaZBX", title: "Bli medlem" },
-  volunteer: { id: "EkglkA", title: "Ta en roll" },
-  feedback: { id: "MegN90", title: "Lämna synpunkt" },
-  questions: { id: "zxOMDM", title: "Ställ en fråga" },
-  whatsapp: { id: "gDp0DM", title: "WhatsApp-grupp" },
+  feedback: { id: "Gxgqr2", title: "Lämna din synpunkt" },
+  volunteer: { id: "obp5BX", title: "Anmäl dig för Khidmat i Imam Husayns (ع) väg" },
+  member: { id: "RGgbYv", title: "Bli medlem i Masjid Hayat" },
+  questions: { id: "eqp07J", title: "Ställ din fråga" },
+  whatsapp: { id: "dWp82D", title: "Få tillgång till WhatsApp-gruppen" },
 } as const;

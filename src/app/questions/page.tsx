@@ -7,7 +7,7 @@ import { muharramImages } from "@/lib/muharram-images";
 import { tallyForms } from "@/lib/tally-forms";
 
 export const metadata: Metadata = {
-  title: "Frågor",
+  title: "Ställ din fråga",
 };
 
 export default function QuestionsPage() {
@@ -22,13 +22,12 @@ export default function QuestionsPage() {
       />
       <Section className="py-12">
         <p className="mx-auto max-w-2xl text-center leading-relaxed text-muted-foreground">
-          Har du frågor om medlemskap, Muharram eller verksamheten? Fyll i formuläret nedan så
-          återkommer vi till dig så snart vi kan.
+          Har du frågor om medlemskap, Muharram, Majlis eller Masjid Hayats verksamhet? Skicka din
+          fråga så återkommer vi så snart som möjligt.
         </p>
       </Section>
       <FormSection
-        title="Kontakta oss"
-        description="Vi svarar så snart som möjligt."
+        title="Ställ din fråga"
         formId={tallyForms.questions.id}
         formTitle={tallyForms.questions.title}
       />
